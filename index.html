@@ -29,10 +29,48 @@
           background-color: #333;
           color: white;
           padding: 10px 0px;
+          z-index: 9999;
+          position: fixed;
+          width: 100%;
         }
 
-        .hittheawesomegyat {
-          display: flex;
+          /* New styles for the dropdown */
+          .dropdown {
+          position: relative;
+          display: inline-block;
+          margin-right: 10px; /* Add some margin */
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #333;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {
+          background-color: #464646;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        .dropbtn {
+          background-color: #333;
+        }
+
+        #hittheawesomegyat {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -95,7 +133,7 @@
      }
 
      /* CSS rules for window sizes between 7857px and 2748px, built for Arc Browser Windows, 1080p standard monitor */
-     @media screen and (min-width: 1757px) and (max-width: 1757px) {
+     @media screen and (min-width: 1756px) and (max-width: 1758px) {
      #josh {
       margin-top: 10%;
      }
@@ -106,7 +144,6 @@
       margin-top: 10%;
      }
      }
-
      /* CSS rules for window sizes between 1857px and 2950px, built for Firefox, 1440p standard monitor */
      @media screen and (min-width: 2559px) and (max-width: 2600px) {
      #grimsoldier {
@@ -148,45 +185,41 @@
       
       <!-- Top bar -->
       <div class="top-bar">
-        <img src="logo.png" alt="Logo" style="height: 38px; margin: 0px 10px;">
-        <div style="margin: 10px 30px;"><span style="color:#FF9999">M</span><span style="color:#FFC599">e</span><span style="color:#FFF099">m</span><span style="color:#E2FF99">e</span><span style="color:#B6FF99">t</span><span style="color:#99FFA8">e</span><span style="color:#99FFD3">a</span><span style="color:#99FFFF">m</span><span style="color:#99D3FF">.</span><span style="color:#99A8FF">w</span><span style="color:#B699FF">o</span><span style="color:#E299FF">r</span><span style="color:#FF99F0">l</span><span style="color:#FF99C5">d</span></div>
-        <div class="topright"><a href="https://discord.gg/5wMKptkYHZ"><span style="color:#FF9999">D</span><span style="color:#FFF099">i</span><span style="color:#B6FF99">s</span><span style="color:#99FFD3">c</span><span style="color:#99D3FF">o</span><span style="color:#B699FF">r</span><span style="color:#FF99F0">d</span></a> <a href="https://www.youtube.com/channel/UCCaTZIUNnO04lUox52RBEXA"><span style="color:#FF9999">Y</span><span style="color:#FFF099">o</span><span style="color:#B6FF99">u</span><span style="color:#99FFD3">t</span><span style="color:#99D3FF">u</span><span style="color:#B699FF">b</span><span style="color:#FF99F0">e</span></a> <a href="https://social.memeteam.world"><span style="color:#FF9999">F</span><span style="color:#EBFF99">o</span><span style="color:#99FFC2">r</span><span style="color:#99C2FF">u</span><span style="color:#EB99FF">m</span></a></div>
-      </div>
+          <img src="logo.png" alt="Logo" style="height: 38px; margin: 0px 10px;">
+          <div style="margin: 10px 30px;"><span style="color:#FF9999">M</span><span style="color:#FFC599">e</span><span style="color:#FFF099">m</span><span style="color:#E2FF99">e</span><span style="color:#B6FF99">t</span><span style="color:#99FFA8">e</span><span style="color:#99FFD3">a</span><span style="color:#99FFFF">m</span><span style="color:#99D3FF">.</span><span style="color:#99A8FF">w</span><span style="color:#B699FF">o</span><span style="color:#E299FF">r</span><span style="color:#FF99F0">l</span><span style="color:#FF99C5">d</span></div>
+        <div class="topright">
+          <a href="https://discord.gg/5wMKptkYHZ"><span style="color:#FF9999">D</span><span style="color:#FFF099">i</span><span style="color:#B6FF99">s</span><span style="color:#99FFD3">c</span><span style="color:#99D3FF">o</span><span style="color:#B699FF">r</span><span style="color:#FF99F0">d</span></a> <a href="https://www.youtube.com/channel/UCCaTZIUNnO04lUox52RBEXA"><span style="color:#FF9999">Y</span><span style="color:#FFF099">o</span><span style="color:#B6FF99">u</span><span style="color:#99FFD3">t</span><span style="color:#99D3FF">u</span><span style="color:#B699FF">b</span><span style="color:#FF99F0">e</span></a> <a href="https://social.memeteam.world"><span style="color:#FF9999">F</span><span style="color:#EBFF99">o</span><span style="color:#99FFC2">r</span><span style="color:#99C2FF">u</span><span style="color:#EB99FF">m</span></a>
+          <!-- Dropdown for Table of Contents -->
+             <div class="dropdown">
+            <button class="dropbtn"><span style="color:#FF9999">T</span><span style="color:#FFC299">a</span><span style="color:#FFEB99">b</span><span style="color:#EBFF99">l</span><span style="color:#C2FF99">e</span> <span style="color:#99FF99">O</span><span style="color:#99FFC2">f</span> <span style="color:#99FFEB">C</span><span style="color:#99EBFF">o</span><span style="color:#99C2FF">n</span><span style="color:#9999FF">t</span><span style="color:#C299FF">e</span><span style="color:#EB99FF">n</span><span style="color:#FF99EB">t</span><span style="color:#FF99C2">s</span></button>
+            <div class="dropdown-content">
+            <a href="#members"><span style="color:#FF9999">M</span><span style="color:#FFF099">e</span><span style="color:#B6FF99">m</span><span style="color:#99FFD3">b</span><span style="color:#99D3FF">e</span><span style="color:#B699FF">r</span><span style="color:#FF99F0">s</span></a>
+            <a href="#historymemeteam"><span style="color:#FF9999">H</span><span style="color:#FFF099">i</span><span style="color:#B6FF99">s</span><span style="color:#99FFD3">t</span><span style="color:#99D3FF">o</span><span style="color:#B699FF">r</span><span style="color:#FF99F0">y</span></a>
+            <a href="#changelog"><span style="color:#FF9999">C</span><span style="color:#FFDD99">h</span><span style="color:#DDFF99">a</span><span style="color:#99FF99">n</span><span style="color:#99FFDD">g</span><span style="color:#99DDFF">e</span><span style="color:#9999FF">l</span><span style="color:#DD99FF">o</span><span style="color:#FF99DD">g</span></a>
+           </div>        
+           </div>
+           </div>
+           </div>
       
         <!-- Content -->
-        <div><!--MY O HOLY TAG STACK GO!!!! *pokemon sounds*-->
+        <div>
+        <br>
+        <br>
+        <br>
+        <br>
         <div style="display: flex; flex-direction: row;"><h1>Welcome to Memeteam.world!</h1><p>again.</p></div>
         Welcome to Memeteam.world, The website for the <a href="https://discord.gg/5wMKptkYHZ">Memeteam Discord Server.</a> We have some other cool stuff as well like the <a href="https://social.memeteam.world">Memeteam Forum</a> and the dead <a href="https://www.youtube.com/channel/UCCaTZIUNnO04lUox52RBEXA">Memeteam Youtube.</a>
         <p>NOTE: memeteam uses cookies now. If you dont consent, simply avoid the worship Duddy Foinjer button. The cookie isn't anything back like a tracker though. It simply works for the worship system to time the 24 cooldown between worships.</p>
-        <div class="hittheawesomegyat">
+
+        <div class="members" id="members">
+        <h2 style="text-align: center; margin-top: 5%;">Members</h2>
+        <div>
+        <div class="memberpanel" id="hittheawesomegyat">
         <button id="likeButton" class="awesomegyat" onclick="showitemgyatt()" style="border-radius: 5%; border-width: 0px; background-color: white;"><img class="awesomegyat" src="foinjer.png" alt="Like"></button>
         <p>Click to worship Duddy Foinjer.</p>
         <p class="youdidityaay" id="youdidityaaya">Worshipped successfully. Come back in 24 Hours to worship again.</p>
-        <div id="awesomegyatties" class="howmanyawesomegyats"><span id="likeCount">0</span> Worships</div> 
-        <div style="margin-top: 20%;">
-        <h3>Table of Contents</h3>
-        <h4>Welcome</h4>
-        <h2>COOKIES!! :3</h2>
-        <h4>Members</h4>
-        <p>PageFault99</p>
-        <p>James</p>
-        <p>Markdrawz01</p> 
-        <p>BeeFuWu</p> 
-        <p>Josh</p> 
-        <p>Grimsoldier</p> 
-        <h4>History of Memeteam</h4>
-        <h5>Early Memeteam</h5>
-        <h5>Mid Memeteam</h5>
-        <h5>Memeteam Servers</h5>
-        <h5>Late Memeteam Servers/Website Creation</h5>
-        <h5>Forum and MediaWiki</h5>
-        <h5>Server's Gyattening</h5>
-        <h5>Memeteam.world V4.0</h5>
-        </div>  
-        </div>
-        <div class="members">
-        <h2 style="text-align: center; margin-top: 5%;">Members</h2>
-        <div>
+        <div id="awesomegyatties" class="howmanyawesomegyats"><span id="likeCount">0</span> Worships</div>  
+        </div>        
         <div class="memberpanel" id="pagefault">
         <h3>PageFault99</h3>
         <img class="memberimg" src="pagefault.gif" alt="PageFault99." style="height: 240px; width: 240px;">
@@ -237,7 +270,7 @@
         </div>
         </div>
         </div>
-        <div class="historymemeteam">
+        <div class="historymemeteam" id="historymemeteam">
         <h2 style="text-align: center; margin-top: 15%;">History of Memeteam</h2>
         <h3 style="text-align: center; margin-top: 5%;">Early Memeteam</h3>
         <p class="wikiparagyat">The memeteam is a discord group formed in 2021 by PageFault. The group started out with three members, PageFault, Grimsoldier, and Luthiene. The groups early interests included Minecraft and Roblox.</p>
@@ -251,8 +284,19 @@
         <p class="wikiparagyat">A week after the memeteam.world v3.0 site released a forum made on Flarium for users to discuss memeteam related topics such as Joshes weight. A MediaWiki installation was added to the server the next day to replace the current wiki on memeteam.world.</p>
         <h3 style="text-align: center; margin-top: 5%;">Server's Gyattening</h3>
         <p class="wikiparagyat">Shortly after the wiki and the forum's creation, memeteam was moved to a new hosting server and due to complications, the data was not transferred and mostly lost. The wiki was recreated but remains in an empty state, cause nobodys wants to rewrite all the pages. The forum came back as well but was also gone fast.</p>
-        <h3 style="text-align: center; margin-top: 5%;">Memeteam.world v4.0</h3>
-        <p class="wikiparagyat">After the wiki was replaced a new terminal design was applied to memeteam. Due to it's complexity it was very unintuitive for the site's users, causing it to be replaced by this site version, Memeteam.world V5.0.</p>  
+        <h3 style="text-align: center; margin-top: 5%;">Memeteam.world v3.0</h3>
+        <p class="wikiparagyat">After the wiki was replaced a new terminal design was applied to memeteam. Due to it's complexity it was very unintuitive for the site's users, causing it to be replaced by this site version, Memeteam.world V4.0.</p>  
+        </div>
+        <div class="changelog" id="changelog" style="margin-top: 10%; text-align: center;">
+          <h2 style="margin-top: 15%;">Changelog</h2>
+            <h3 style="margin-top: 5%;">Memeteam V4.1</h3>
+              <p>made Table Of Contents interactive</p>
+              <p>made Table Of Contents a Top Bar element</p>
+              <p>made Top Bar follow with on scroll</p>
+              <p>added Changelog</p>
+            <h3>Memeteam V4.0</h3>
+              <p>Site Redesign</p>
+              <p>Added awesome Foijer clicking</p>  
         </div>
         <img id="slideOutImage" src="friend.png" alt="Slide Out Image">
         </div>
@@ -273,8 +317,8 @@
      var item = document.getElementById("youdidityaaya");
      var width = window.innerWidth;
      // Define your desired width range
-     var minWidth = 1856; // minimum width 1080p
-     var maxWidth = 1877; // maximum width 1080p
+     var minWidth = 1907; // minimum width 1080p
+     var maxWidth = 2000; // maximum width 1080p
      item.style.display = "block";
      // Check if the width is within the desired range
      if (width >= minWidth && width <= maxWidth) {
