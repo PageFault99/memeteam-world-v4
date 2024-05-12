@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Memeteam.world" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Memeteam.world</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Reset margin and padding for the body */
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Tahoma;
+          background: linear-gradient(135deg, #ffb6c1, #ffcc80, #ffff99, #b2fefa, #a0c4ff);
+          background-size: 100% 100%;
+          min-height: 100vh;
+        }
+
+        body img {
+          border-radius: 5%;
+        }
+      
+        /* Style for the top bar */
+        .top-bar {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background-color: #333;
+          color: white;
+          padding: 10px 0px;
+        }
+
+        .hittheawesomegyat {
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        float: right;
+        margin-right: 5%;
+        margin-top: 5%;
+       }
+
+       .awesomegyat {
+        width: 200px;
+       }
+
+       .youdidityaay {
+        display: none;
+       }
+
+       .topright {
+       margin-left: auto;
+       display: block;
+       }
+
+       .topright a {
+       padding: 10px 15px; /* Adjust padding as needed */
+       text-decoration: none; /* Remove text decoration */
+       margin-right: 10px; /* Add space between links */
+      }
+
+      .memberpanel {
+        height: 370px;
+        width: 240px;
+        margin: 3%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .memeberimg {
+        height: 240px; 
+        width: 240px;
+      }
+
+      .membersocial {
+        color: rgb(255, 0, 149);
+      }
+
+      .wikiparagyat {
+        text-align: center;
+        font-size: 15px;
+      }
+
+     /* CSS rules for window sizes between 1857px and 2950px, built for Microsoft Edge, 1080p standard monitor */
+     @media screen and (min-width: 1857px) and (max-width: 2550px) {
+     #josh {
+      margin-top: 10%;
+     }
+     #grimsoldier {
+      margin-top: 10%;
+     }
+     }
+
+     /* CSS rules for window sizes between 7857px and 2748px, built for Arc Browser Windows, 1080p standard monitor */
+     @media screen and (min-width: 1757px) and (max-width: 1757px) {
+     #josh {
+      margin-top: 10%;
+     }
+     #grimsoldier {
+      margin-top: 10%;
+     }
+     #beefuwu {
+      margin-top: 10%;
+     }
+     }
+
+     /* CSS rules for window sizes between 1857px and 2950px, built for Firefox, 1440p standard monitor */
+     @media screen and (min-width: 2559px) and (max-width: 2600px) {
+     #grimsoldier {
+     margin-top: 10%;
+     }
+     }
+
+     /* CSS rules for window sizes between 1857px and 2950px, built for Firefox, marky poor people monitor */
+     @media screen and (min-width: 2022px) and (max-width: 2024px) {
+     #grimsoldier {
+     margin-top: 10%;
+     }
+     #josh {
+      margin-top: 10%;
+     }
+     }     
+
+      /* New CSS for sliding image */
+        #slideOutImage {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          width: 200px; /* Adjust size as needed */
+          height: auto;
+          opacity: 0; /* Initially hidden */
+          transition: opacity 0.5s ease-in-out; /* Smooth transition */
+          z-index: 9999; /* Ensure it's above other content */
+        }     
+
+        /* Animation to slide in */
+        @keyframes slideIn {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(0); }
+        }
+
+      </style>
+      </head>
+      <body>
+      
+      <!-- Top bar -->
+      <div class="top-bar">
+        <img src="logo.png" alt="Logo" style="height: 38px; margin: 0px 10px;">
+        <div style="margin: 10px 30px;"><span style="color:#FF9999">M</span><span style="color:#FFC599">e</span><span style="color:#FFF099">m</span><span style="color:#E2FF99">e</span><span style="color:#B6FF99">t</span><span style="color:#99FFA8">e</span><span style="color:#99FFD3">a</span><span style="color:#99FFFF">m</span><span style="color:#99D3FF">.</span><span style="color:#99A8FF">w</span><span style="color:#B699FF">o</span><span style="color:#E299FF">r</span><span style="color:#FF99F0">l</span><span style="color:#FF99C5">d</span></div>
+        <div class="topright"><a href="https://discord.gg/5wMKptkYHZ"><span style="color:#FF9999">D</span><span style="color:#FFF099">i</span><span style="color:#B6FF99">s</span><span style="color:#99FFD3">c</span><span style="color:#99D3FF">o</span><span style="color:#B699FF">r</span><span style="color:#FF99F0">d</span></a> <a href="https://www.youtube.com/channel/UCCaTZIUNnO04lUox52RBEXA"><span style="color:#FF9999">Y</span><span style="color:#FFF099">o</span><span style="color:#B6FF99">u</span><span style="color:#99FFD3">t</span><span style="color:#99D3FF">u</span><span style="color:#B699FF">b</span><span style="color:#FF99F0">e</span></a> <a href="https://social.memeteam.world"><span style="color:#FF9999">F</span><span style="color:#EBFF99">o</span><span style="color:#99FFC2">r</span><span style="color:#99C2FF">u</span><span style="color:#EB99FF">m</span></a></div>
+      </div>
+      
+        <!-- Content -->
+        <div><!--MY O HOLY TAG STACK GO!!!! *pokemon sounds*-->
+        <div style="display: flex; flex-direction: row;"><h1>Welcome to Memeteam.world!</h1><p>again.</p></div>
+        Welcome to Memeteam.world, The website for the <a href="https://discord.gg/5wMKptkYHZ">Memeteam Discord Server.</a> We have some other cool stuff as well like the <a href="https://social.memeteam.world">Memeteam Forum</a> and the dead <a href="https://www.youtube.com/channel/UCCaTZIUNnO04lUox52RBEXA">Memeteam Youtube.</a>
+        <p>NOTE: memeteam uses cookies now. If you dont consent, simply avoid the worship Duddy Foinjer button. The cookie isn't anything back like a tracker though. It simply works for the worship system to time the 24 cooldown between worships.</p>
+        <div class="hittheawesomegyat">
+        <button id="likeButton" class="awesomegyat" onclick="showitemgyatt()" style="border-radius: 5%; border-width: 0px; background-color: white;"><img class="awesomegyat" src="foinjer.png" alt="Like"></button>
+        <p>Click to worship Duddy Foinjer.</p>
+        <p class="youdidityaay" id="youdidityaaya">Worshipped successfully. Come back in 24 Hours to worship again.</p>
+        <div id="awesomegyatties" class="howmanyawesomegyats"><span id="likeCount">0</span> Worships</div> 
+        <div style="margin-top: 20%;">
+        <h3>Table of Contents</h3>
+        <h4>Welcome</h4>
+        <h2>COOKIES!! :3</h2>
+        <h4>Members</h4>
+        <p>PageFault99</p>
+        <p>James</p>
+        <p>Markdrawz01</p> 
+        <p>BeeFuWu</p> 
+        <p>Josh</p> 
+        <p>Grimsoldier</p> 
+        <h4>History of Memeteam</h4>
+        <h5>Early Memeteam</h5>
+        <h5>Mid Memeteam</h5>
+        <h5>Memeteam Servers</h5>
+        <h5>Late Memeteam Servers/Website Creation</h5>
+        <h5>Forum and MediaWiki</h5>
+        <h5>Server's Gyattening</h5>
+        <h5>Memeteam.world V4.0</h5>
+        </div>  
+        </div>
+        <div class="members">
+        <h2 style="text-align: center; margin-top: 5%;">Members</h2>
+        <div>
+        <div class="memberpanel" id="pagefault">
+        <h3>PageFault99</h3>
+        <img class="memberimg" src="pagefault.gif" alt="PageFault99." style="height: 240px; width: 240px;">
+        <h5>"stop im tryinf tonzldo alep qe xan do tjis tmr" -PageFault</h5>
+        <p>PageFault99 is the owner of the Memeteam, programmed this website and plays a large variety of games from Dying Light 2 to Counter Strike 2.</p>
+        <p class="membersocial">pagefault@memeteam.world</p>
+        <p class="membersocial">@pagefault99 (discord)</p>
+        </div>
+        <div class="memberpanel" id="james">
+        <h3>James</h3>
+        <img class="memberimg" src="james.gif" alt="James/Splendid." style="height: 240px; width: 240px;">
+        <h5>"holy smokes lois" - peeler fam guy</h5>
+        <p>James is a New Gen Memeteam member that joined in November, 2023, James enjoys playing Roblox, Minecraft, Lethal Company or literally any other games. Jamsy poo likes Trains, Planes, Ships and other stuff.</p>
+        <p class="membersocial">23jamesam5can@gmail.com</p>
+        <a href="https://twitter.com/glugnutyummy" class="membersocial">@glugnutyummy (twitter)</a>
+        </div>
+        <div class="memberpanel" id="markdrawz01">
+        <h3>Markdrawz01</h3>
+        <img class="memberimg" src="markdrawz01.gif" alt="Markdrawz01." style="height: 240px; width: 240px;">
+        <h5>"I draw I think" -Markdrawz01</h5>
+        <p>Markdrawz01 is the shortest memeteamer. He established his online position during 2021 with an animation tiktok duet which created his online circle and has developed it since.</p>
+        <a href="https://www.tiktok.com/@markdraws01?_t=8j0gpbbbBMz&_r=1" class="membersocial">@markdraws01 (TikTok)</a> <br>
+        <br><a href="https://www.youtube.com/@Markdrawz01" class="membersocial">@markdrawz01 (YouTube)</a> <br>
+        <br><a href="https://x.com/markdrawz01?t=zrYrQH4qd4wiSkGHcHPwOA&s=09" class="membersocial">@markdrawz01 (Twitter)</a>
+        </div>
+        <div class="memberpanel" id="beefuwu">
+        <h3>BeeFuWu/Olive</h3>
+        <img class="memberimg" src="beefuwu.gif" alt="BeeFuWu/Olive." style="height: 240px; width: 240px;">
+        <h5>“i love angler grimacekink” -BeeFuWu</h5>
+        <p>BeeFuWu (who also goes by Olive), is an OG meme teamer and is one of the artists in the meme team. They joined the meme team early 2021 and has had 2 different accounts since. Oh yeah, they are also a furry femboy, weird right?</p>
+        <p class="membersocial">@beefuwu (discord)</p>
+        <a href="https://twitter.com/beefuwu_" class="membersocial">@beefuwu_ (Twitter)</a>
+        </div>
+        <div class="memberpanel" id="josh">
+        <h3>Josh</h3>
+        <img class="memberimg" src="josh.png" alt="413 Error: He was too big to fit the page. Sorry." style="height: 240px; width: 240px;">
+        <h5>"Shut the hell up hern" -Josh</h5>
+        <p>Josh or in some areas jjelly or jjellysusman is the tallest member of the memeteam. one of the original members of the memeteam smp season 1 and probably the dumbest so far. he is the second fattest member right befor pagefault99. (you fuck big big largy) he joined the memeteam through a minecraft server where he was invited to pagefault99's little town.</p>
+        <p class="membersocial">jjsusman@memeteam.world</p>
+        <p class="membersocial">@jjellysusman (discord)</p>
+        <a class="membersocial" href="https://www.youtube.com/@JJsusman">@jjsusman (YouTube)</a>
+        </div>
+        <div class="memberpanel" id="grimsoldier">
+        <div style="display: flex; flex-direction: row;"><h3>Grimy</h3><img src="grimy.webp" style="width: 48px; height: 48px;" alt="gimy"></div>
+        <img class="memberimg" src="grimy.png" alt="Grimsoldier." style="height: 240px; width: 240px;">
+        <h5>""It aint gay to kiss your homies goodnight right?" -Grimothy</h5>
+        <p>Grimothy was one of the first three people in the meme team server, he is also one of the most teased people on the server and plays Dying Light 2 and sometimes Roblox with Page. He's mostly active but never pays attention to any of the multiple servers he is on and mostly plays games on Roblox all the time or just watches Youtube while he checks up on other servers and reply to other messages. Grimothy also hates being called Grimace.</p>
+        </div>
+        </div>
+        </div>
+        <div class="historymemeteam">
+        <h2 style="text-align: center; margin-top: 15%;">History of Memeteam</h2>
+        <h3 style="text-align: center; margin-top: 5%;">Early Memeteam</h3>
+        <p class="wikiparagyat">The memeteam is a discord group formed in 2021 by PageFault. The group started out with three members, PageFault, Grimsoldier, and Luthiene. The groups early interests included Minecraft and Roblox.</p>
+        <h3 style="text-align: center; margin-top: 5%;">Mid Memeteam</h3>
+        <p class="wikiparagyat">The "Mid Memeteam" started after Josh used his weight to forcefully join the group. (Beefuwu joined in between early and mid memeteam.) Mid Memeteam eventually caused the "9/11 of all memeteams" to occur after realising adding josh and various other online figures to the group exposed PageFault, Grimsoldier and Luthiene's real name. Markdrawz01 moved from his home country and moved to where PageFault lives where he added Mark. The group was shortly after closed and migrated to a discord server to hide their names, marking the second Memeteam.</p>
+        <h3 style="text-align: center; margin-top: 5%;">Memeteam Servers</h3>
+        <p class="wikiparagyat">The second Memeteam started the server hopping of Memeteam. Nothing of importance happened until the late servers. The memeteam group kept burning out. When a burnout happened PageFault would create a new discord server and migrate data from the old to it to revive the group. This went on for several months and sounds like pussy behavior but honestly saved the whole group.</p>
+        <h3 style="text-align: center; margin-top: 5%;">Late Memeteam Servers/Website Creation</h3>
+        <p class="wikiparagyat">The late servers was marked after the purchasing of the memeteam.world domain, of which started as a simple wordpress site advertising Memeteam related links. Shortly after some weird shit happened and cause a fucking meltdown. The domain remaned empty for several months until memeteam.world v1.0 was released. This version of the site featured 4 simple pages, Home, Members, Contact and Social. Each page serving the function listed in the title. Then memeteam.world v2.0 was released featuring Home, Members, Credits and Updates. The site had many hidden functions and secrets, such as a bouncing kitty cat, a video of baldi saying 3, to copyright free rap backgrounds. Then memeteam.world v3.0 (current version) was released featuring a much more complicated layout. the new site was compacted all into one page, with a retro computer theme to it, making many hints and jokes at windows 10 and XP. It featured credits, updates and a wiki to replace the members page. This site does not hold many secrets.</p>
+        <h3 style="text-align: center; margin-top: 5%;">Forum and MediaWiki</h3>
+        <p class="wikiparagyat">A week after the memeteam.world v3.0 site released a forum made on Flarium for users to discuss memeteam related topics such as Joshes weight. A MediaWiki installation was added to the server the next day to replace the current wiki on memeteam.world.</p>
+        <h3 style="text-align: center; margin-top: 5%;">Server's Gyattening</h3>
+        <p class="wikiparagyat">Shortly after the wiki and the forum's creation, memeteam was moved to a new hosting server and due to complications, the data was not transferred and mostly lost. The wiki was recreated but remains in an empty state, cause nobodys wants to rewrite all the pages. The forum came back as well but was also gone fast.</p>
+        <h3 style="text-align: center; margin-top: 5%;">Memeteam.world v4.0</h3>
+        <p class="wikiparagyat">After the wiki was replaced a new terminal design was applied to memeteam. Due to it's complexity it was very unintuitive for the site's users, causing it to be replaced by this site version, Memeteam.world V5.0.</p>  
+        </div>
+        <img id="slideOutImage" src="friend.png" alt="Slide Out Image">
+        </div>
+
+    <data value="data gyat"></data>
+    
+    <script src="script.js"></script> <!--JavaScript For Worship JSON Sync-->
+    <script>
+    // Delay the slide out animation for 30 seconds
+  setTimeout(function() {
+        var slideOutImage = document.getElementById('slideOutImage');
+        slideOutImage.style.opacity = '1'; // Make the image visible
+        slideOutImage.style.animation = 'slideIn 1s forwards'; // Start the slide in animation
+    }, 30000); // 30 seconds delay
+  
+     function showitemgyatt() {
+     // Get the invisible worship text
+     var item = document.getElementById("youdidityaaya");
+     var width = window.innerWidth;
+     // Define your desired width range
+     var minWidth = 1856; // minimum width 1080p
+     var maxWidth = 1877; // maximum width 1080p
+     item.style.display = "block";
+     // Check if the width is within the desired range
+     if (width >= minWidth && width <= maxWidth) {
+     // Perform actions if within the range
+     var panelspace = document.getElementById("beefuwu"); // for Microsoft Edge/Firefox, Spacing correction on worship command
+     // Set its display property to "block" to make it visible
+     
+     panelspace.style.marginTop = "10%"; // for Microsoft Edge/Firefox, Spacing correction on worship command
+
+     console.log("Viewport width is within the range.");
+     } else {
+     // Perform actions if outside the range or do nothing
+     // Example action:
+     console.log("Viewport width is outside the range, testing 1440p...");
+     var minWidth2 = 2559; // minimum width 1440p
+     var maxWidth2 = 2561; // maximum width 1440p
+
+     if (width >= minWidth2 && width <= maxWidth2) {
+     // Perform actions if within the range
+     var panelspace2 = document.getElementById("josh"); // for Firefox 1440p, Spacing correction on worship command
+     // Set its display property to "block" to make it visible
+     
+     panelspace2.style.marginTop = "10%"; // for Firefox 1440p, Spacing correction on worship command
+     }
+     else {
+      console.log("Viewport width is outside the range, testing laptop res...")
+      var minWidth3 = 1850; // minimum width laptop
+      var maxWidth3 = 2024; // maximum width laptop
+      if (width >= minWidth3 && width <= maxWidth3) {
+        var panelspace3 = document.getElementById("beefuwu"); // for Firefox laptop, Spacing correction on worship command
+        panelspace3.style.marginTop = "10%"; // for Firefox laptop, Spacing correction on worship command
+      }
+    }
+  }
+     }
+// Function to check if the user is on a mobile device
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Function to apply styles for mobile users
+function applyMobileStyles() {
+  // Check if the user is on a mobile device
+  if (isMobileDevice()) {
+    // Apply styles for mobile users to member panels
+    var memberPanels = document.querySelectorAll('.memberpanel');
+    memberPanels.forEach(function(panel) {
+      panel.style.marginTop = '20%'; // Adjust the margin top as needed
+    });
+
+    // Apply styles for mobile users to history section
+    var historySection = document.querySelector('.historymemeteam');
+    if (historySection) {
+      historySection.style.marginTop = '40%'; // Adjust the margin top as needed
+    }
+  }
+}
+
+// Call the function to apply styles for mobile users
+applyMobileStyles(); // This line should be outside of any other func
+</script>
+</body>
+</html>
